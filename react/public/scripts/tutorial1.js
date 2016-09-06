@@ -39,7 +39,7 @@ var CommentBox = React.createClass({
         this.setState({data: newComments});
 
         $.ajax({
-            url: this.props.posturl,
+            url: this.props.url,
             dataType: 'json',
             type: 'POST',
             data: comment,
@@ -149,9 +149,7 @@ var Comment = React.createClass({
 });
 
 ReactDOM.render(
-    //<CommentBox data={data} />,
-    //<CommentBox url="/api/comments" />,
-    <CommentBox url="http://localhost/cakephp-react/backend/comments.json" posturl="http://localhost/cakephp-react/backend/comments.json" pollInterval={2000} />,
+    <CommentBox url="http://localhost/cakephp-react/backend/comments.json" pollInterval={2000} />,
     document.getElementById('content')
 );
 

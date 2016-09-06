@@ -6,9 +6,9 @@ Example how to use a CakePHP 3.x application as backend together with a React fr
 
 Make sure you have [Composer](http://getcomposer.org/doc/00-intro.md) installed and configured.
 
-1. Check out the source code.
+1. Check out this source code to cakephp-react and open a shell in the backend directory.
 
-2. Run `composer install` in the installation directory.
+2. Run `composer install`.
 
 3. Create a database with the following settings:
     ```
@@ -21,7 +21,6 @@ configuration relevant for your application.
 
 5. run the migration. This will create the database table.
     ```   
-       cd cakephp-react/backend
        bin/cake migrations migrate
     ```
 
